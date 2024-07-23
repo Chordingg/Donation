@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="layouts/layout1.html">
+
+<head>
+    <title th:text="'portfolio'">portfolio</title>
+</head>
+
+<body>
+
+<!-- Main Content -->
+<div layout:fragment="content">
+
+    <!-- Breadcrumbs Section -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>포트폴리오 세부 정보</h2>
+                <ol>
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="portfolio.html">포트폴리오</a></li>
+                    <li>포트폴리오 세부 정보</li>
+                </ol>
+            </div>
+        </div>
+    </section><!-- End Breadcrumbs Section -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-8">
+                    <div class="portfolio-details-slider swiper">
+                        <div class="swiper-wrapper align-items-center">
+                            <div class="swiper-slide">
+                                <img src="/assets/img/portfolio/portfolio-details-1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/assets/img/portfolio/portfolio-details-2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/assets/img/portfolio/portfolio-details-3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="portfolio-info">
+                        <h3>프로젝트 정보</h3>
+                        <ul>
+                            <li><strong>카테고리</strong>: 웹 디자인</li>
+                            <li><strong>클라이언트</strong>: ASU 회사</li>
+                            <li><strong>프로젝트 날짜</strong>: 2020년 3월 1일</li>
+                            <li><strong>프로젝트 URL</strong>: <a href="#">www.example.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="portfolio-description">
+                        <h2>이것은 포트폴리오 세부 정보의 예입니다</h2>
+                        <p>
+                            Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- End Portfolio Details Section -->
+
+</div><!-- End Main Content -->
+
+</body>
+</html>

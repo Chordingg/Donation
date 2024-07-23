@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="layouts/layout1.html">
+
+<head>
+    <title th:text="'홈'">홈</title>
+</head>
+
+<body>
+
+<!-- Main Content -->
+<div layout:fragment="content">
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+            <h1>당신의 후원이 필요합니다</h1>
+            <h2>우리는 가난한 사람들을 위한 후원 사이트입니다</h2>
+            <a href="#about" class="btn-get-started">후원하기</a>
+        </div>
+    </section>
+
+    <main id="main">
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container" data-aos="fade-up">
+                <div class="row about-container">
+
+                    <div class="col-lg-6 content order-lg-1 order-2">
+                        <h2 class="title">우리 소개</h2>
+                        <p>
+                            우리는 가난한 사람들을 돕기 위해 지난 10년 동안 1,000명 이상의 사람들에게 도움을 제공했습니다. 우리의 목표는 더 나은 세상을 만드는 것입니다. 여러분의 작은 도움이 큰 변화를 가져올 수 있습니다.
+                        </p>
+
+                        <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                            <div class="icon"><i class="bi bi-briefcase"></i></div>
+                            <h4 class="title"><a href="">후원금 사용</a></h4>
+                            <p class="description">후원금은 가난한 사람들을 돕기 위해 다양한 프로젝트에 사용됩니다.</p>
+                        </div>
+
+                        <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                            <div class="icon"><i class="bi bi-card-checklist"></i></div>
+                            <h4 class="title"><a href="">프로젝트 관리</a></h4>
+                            <p class="description">우리는 투명하고 효율적인 프로젝트 관리를 통해 후원금을 최대한 활용합니다.</p>
+                        </div>
+
+                        <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                            <div class="icon"><i class="bi bi-binoculars"></i></div>
+                            <h4 class="title"><a href="">미래 비전</a></h4>
+                            <p class="description">우리는 지속 가능한 미래를 위해 끊임없이 노력하고 있습니다.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6 background order-lg-2 order-1" data-aos="fade-left" data-aos-delay="100"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Facts Section -->
+        <section id="facts">
+            <div class="container" data-aos="fade-up">
+                <div class="section-header">
+                    <h3 class="section-title">사실들</h3>
+                    <p class="section-description">우리가 달성한 주요 성과들입니다.</p>
+                </div>
+                <div class="row counters">
+
+                    <div class="col-lg-3 col-6 text-center">
+                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
+                      class="purecounter"></span>
+                        <p>후원자</p>
+                    </div>
+
+                    <div class="col-lg-3 col-6 text-center">
+                <span data-purecounter-start="0" data-purecounter-end="534" data-purecounter-duration="1"
+                      class="purecounter"></span>
+                        <p>프로젝트</p>
+                    </div>
+
+                    <div class="col-lg-3 col-6 text-center">
+                <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1"
+                      class="purecounter"></span>
+                        <p>지원 시간 (지난 해 동안 지원한 총 시간)</p>
+                    </div>
+
+                    <div class="col-lg-3 col-6 text-center">
+                <span data-purecounter-start="0" data-purecounter-end="42" data-purecounter-duration="1"
+                      class="purecounter"></span>
+                        <p>열심히 일하는 사람들</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <div class="container" data-aos="fade-up">
+                <div class="section-header">
+                    <h3 class="section-title">서비스</h3>
+                    <p class="section-description">우리가 제공하는 주요 서비스들입니다.</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                        <div class="box">
+                            <div class="icon"><a href=""><i class="bi bi-briefcase"></i></a></div>
+                            <h4 class="title"><a href="">기본 지원</a></h4>
+                            <p class="description">가장 필요한 사람들에게 기본적인 생활 지원을 제공합니다.</p>
+                            <a href="inner-page#basic-support" class="details-link">자세히 보기</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                        <div class="box">
+                            <div class="icon"><a href=""><i class="bi bi-card-checklist"></i></a></div>
+                            <h4 class="title"><a href="">교육 지원</a></h4>
+                            <p class="description">아이들에게 교육의 기회를 제공하여 밝은 미래를 열어줍니다.</p>
+                            <a href="inner-page#education-support" class="details-link">자세히 보기</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                        <div class="box">
+                            <div class="icon"><a href=""><i class="bi bi-bar-chart"></i></a></div>
+                            <h4 class="title"><a href="">의료 지원</a></h4>
+                            <p class="description">가난한 사람들에게 필요한 의료 서비스를 제공합니다.</p>
+                            <a href="inner-page#medical-support" class="details-link">자세히 보기</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                        <div class="box">
+                            <div class="icon"><a href=""><i class="bi bi-binoculars"></i></a></div>
+                            <h4 class="title"><a href="">심리 상담</a></h4>
+                            <p class="description">심리적으로 어려움을 겪는 사람들에게 상담 서비스를 제공합니다.</p>
+                            <a href="inner-page#counseling" class="details-link">자세히 보기</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                        <div class="box">
+                            <div class="icon"><a href=""><i class="bi bi-brightness-high"></i></a></div>
+                            <h4 class="title"><a href="">긴급 구호</a></h4>
+                            <p class="description">재난 상황에서 신속하게 긴급 구호를 제공합니다.</p>
+                            <a href="inner-page#emergency-relief" class="details-link">자세히 보기</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                        <div class="box">
+                            <div class="icon"><a href=""><i class="bi bi-calendar4-week"></i></a></div>
+                            <h4 class="title"><a href="">커뮤니티 지원</a></h4>
+                            <p class="description">지역 커뮤니티의 발전을 위해 다양한 지원을 제공합니다.</p>
+                            <a href="inner-page#community-support" class="details-link">자세히 보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call To Action Section -->
+        <section id="call-to-action">
+            <div class="container">
+                <div class="row" data-aos="zoom-in">
+                    <div class="col-lg-9 text-center text-lg-start">
+                        <h3 class="cta-title">지금 행동하세요</h3>
+                        <p class="cta-text">당신의 작은 도움이 큰 변화를 만들 수 있습니다. 지금 바로 후원에 참여해주세요.</p>
+                    </div>
+                    <div class="col-lg-3 cta-btn-container text-center">
+                        <a class="cta-btn align-middle" href="#">후원하기</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <div class="container" data-aos="fade-up">
+                <div class="section-header">
+                    <h3 class="section-title">부족한 손길들</h3>
+                    <p class="section-description">우리에게는 아직 수많은 도움의 손길이 필요합니다.</p>
+                </div>
+
+                <div class="row" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-lg-12 d-flex justify-content-center">
+                        <ul id="portfolio-flters">
+                            <li data-filter="*" class="filter-active">전체</li>
+                            <li data-filter=".filter-education">교육</li>
+                            <li data-filter=".filter-medical">의료</li>
+                            <li data-filter=".filter-housing">주거</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-education">
+                        <img src="/assets/img/portfolio/pexels-ajeet-singh-1570263-3019401.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>교육 1</h4>
+                            <p>교육</p>
+                            <a href="/assets/img/portfolio/pexels-ajeet-singh-1570263-3019401.jpg" data-gallery="portfolioGallery"
+                               class="portfolio-lightbox preview-link" title="교육 1"><i class="bx bx-plus"></i></a>
+                            <a href="portfolio-details" class="details-link" title="자세히 보기"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-medical">
+                        <img src="/assets/img/portfolio/pexels-ivan-drazic-20457695-17971337.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>의료 1</h4>
+                            <p>의료</p>
+                            <a href="/assets/img/portfolio/pexels-ivan-drazic-20457695-17971337.jpg" data-gallery="portfolioGallery"
+                               class="portfolio-lightbox preview-link" title="의료 1"><i class="bx bx-plus"></i></a>
+                            <a href="portfolio-details" class="details-link" title="자세히 보기"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-housing">
+                        <img src="/assets/img/portfolio/pexels-mart-production-8078379.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>주거 1</h4>
+                            <p>주거</p>
+                            <a href="/assets/img/portfolio/pexels-mart-production-8078379.jpg" data-gallery="portfolioGallery"
+                               class="portfolio-lightbox preview-link" title="주거 1"><i class="bx bx-plus"></i></a>
+                            <a href="portfolio-details" class="details-link" title="자세히 보기"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-education">
+                        <img src="/assets/img/pexels-neris-milanio-31932426-8979526.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>교육 2</h4>
+                            <p>교육</p>
+                            <a href="/assets/img/pexels-neris-milanio-31932426-8979526.jpg" data-gallery="portfolioGallery"
+                               class="portfolio-lightbox preview-link" title="교육 2"><i class="bx bx-plus"></i></a>
+                            <a href="portfolio-details" class="details-link" title="자세히 보기"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-medical">
+                        <img src="/assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>의료 2</h4>
+                            <p>의료</p>
+                            <a href="/assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery"
+                               class="portfolio-lightbox preview-link" title="의료 2"><i class="bx bx-plus"></i></a>
+                            <a href="portfolio-details" class="details-link" title="자세히 보기"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-housing">
+                        <img src="/assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>주거 2</h4>
+                            <p>주거</p>
+                            <a href="/assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery"
+                               class="portfolio-lightbox preview-link" title="주거 2"><i class="bx bx-plus"></i></a>
+                            <a href="portfolio-details" class="details-link" title="자세히 보기"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-education">
+                        <img src="/assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>교육 3</h4>
+                            <p>교육</p>
+                            <a href="/assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery"
+                               class="portfolio-lightbox preview-link" title="교육 3"><i class="bx bx-plus"></i></a>
+                            <a href="portfolio-details" class="details-link" title="자세히 보기"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-medical">
+                        <img src="/assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>의료 3</h4>
+                            <p>의료</p>
+                            <a href="/assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery"
+                               class="portfolio-lightbox preview-link" title="의료 3"><i class="bx bx-plus"></i></a>
+                            <a href="portfolio-details" class="details-link" title="자세히 보기"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-housing">
+                        <img src="/assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>주거 3</h4>
+                            <p>주거</p>
+                            <a href="/assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery"
+                               class="portfolio-lightbox preview-link" title="주거 3"><i class="bx bx-plus"></i></a>
+                            <a href="portfolio-details" class="details-link" title="자세히 보기"><i class="bx bx-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team">
+            <div class="container" data-aos="fade-up">
+                <div class="section-header">
+                    <h3 class="section-title">팀</h3>
+                    <p class="section-description">우리 팀을 소개합니다.</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="member" data-aos="fade-up" data-aos-delay="100">
+                            <div class="pic"><img src="/assets/img/team-1.jpg" alt=""></div>
+                            <h4>Walter White</h4>
+                            <span>단체 설립자</span>
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="member" data-aos="fade-up" data-aos-delay="200">
+                            <div class="pic"><img src="/assets/img/team-2.jpg" alt=""></div>
+                            <h4>Sarah Jhinson</h4>
+                            <span>후원 관리자</span>
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="member" data-aos="fade-up" data-aos-delay="300">
+                            <div class="pic"><img src="/assets/img/team-3.jpg" alt=""></div>
+                            <h4>William Anderson</h4>
+                            <span>현장 책임자</span>
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="member" data-aos="fade-up" data-aos-delay="400">
+                            <div class="pic"><img src="/assets/img/team-4.jpg" alt=""></div>
+                            <h4>Amanda Jepson</h4>
+                            <span>회계사</span>
+                            <div class="social">
+                                <a href=""><i class="bi bi-twitter"></i></a>
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="section-title">연락처</h3>
+                    <p class="section-description">문의 사항이 있으시면 언제든지 연락주세요.</p>
+                </div>
+            </div>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452"
+                    width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            <div class="container mt-5">
+                <div class="row justify-content-center">
+
+                    <div class="col-lg-3 col-md-4">
+
+                        <div class="info">
+                            <div>
+                                <i class="bi bi-geo-alt"></i>
+                                <p>A108 Adam Street<br>New York, NY 535022</p>
+                            </div>
+
+                            <div>
+                                <i class="bi bi-envelope"></i>
+                                <p>whgustj5679@naver.com</p>
+                            </div>
+
+                            <div>
+                                <i class="bi bi-phone"></i>
+                                <p>+82 010 5027 5673</p>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://github.com/Chordingg?tab=repositories" class="github"><i class="bi bi-github"></i></a>
+                            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="notion"><i class="bi bi-journal-text"></i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-5 col-md-8">
+                        <div class="form">
+                            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control" id="name"
+                                           placeholder="성함" required>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <input type="email" class="form-control" name="email" id="email"
+                                           placeholder="이메일" required>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <input type="text" class="form-control" name="subject" id="subject"
+                                           placeholder="제목" required>
+                                </div>
+                                <div class="form-group mt-3">
+                            <textarea class="form-control" name="message" rows="5" placeholder="메시지"
+                                      required></textarea>
+                                </div>
+                                <div class="my-3">
+                                    <div class="loading">로딩 중</div>
+                                    <div class="error-message"></div>
+                                    <div class="sent-message">메시지가 전송되었습니다. 감사합니다!</div>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit">메시지 보내기</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+</body>
+</html>
