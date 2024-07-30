@@ -22,6 +22,7 @@ public class Donation {
 
     private LocalDateTime updateDate; // 수정일
 
+    @Column(length = 255)
     private String thumbnail; // 썸네일
 
     private int interest; // 관심 (하트)

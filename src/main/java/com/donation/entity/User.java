@@ -31,10 +31,8 @@ public class User {
     private UserStatus status; // 계정 상태
 
     // 주소 정보
-    private String addressLine1; // 주소 줄 1
-    private String addressLine2; // 주소 줄 2 (선택 사항)
+    private String address; // 주소
     private String city; // 도시
-    private String state; // 주/도
     private String postalCode; // 우편번호
     private String country; // 국가
 }

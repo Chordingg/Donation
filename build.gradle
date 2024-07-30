@@ -37,6 +37,7 @@ dependencies {
 
     // Spring Security 의존성 추가
     implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6'
     implementation 'org.springframework.security:spring-security-crypto'
 
 }

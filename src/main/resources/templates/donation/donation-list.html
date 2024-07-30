@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Donations</title>
+</head>
+<body>
+<h1>Donations</h1>
+<table>
+    <tr>
+        <th>Title</th>
+        <th>Content</th>
+        <th>Category</th>
+        <th>Target Amount</th>
+        <th>Raised Amount</th>
+        <th>Thumbnail</th>
+        <th>Interest</th>
+        <th>Status</th>
+    </tr>
+    <tr th:each="donation : ${donations}">
+        <td th:text="${donation.title}"></td>
+        <td th:text="${donation.content}"></td>
+        <td th:text="${donation.category}"></td>
+        <td th:text="${donation.targetAmount}"></td>
+        <td th:text="${donation.raisedAmount}"></td>
+        <td><img th:src="${donation.thumbnail}" alt="Thumbnail" style="max-width: 100px; max-height: 100px;"></td>
+        <td th:text="${donation.interest}"></td>
+        <td th:text="${donation.status}"></td>
+    </tr>
+</table>
+</body>
+</html>

@@ -18,18 +18,18 @@ public class UserController {
     @GetMapping("/register")
     public String showRegistrationForm(Model model) {
         model.addAttribute("user", new User());
-        return "/User/register";
+        return "/user/register";
     }
 
     @PostMapping("/register")
     public String registerUser(@ModelAttribute User user, Model model) {
         userService.registerUser(user);
         model.addAttribute("successMessage", "회원가입이 성공적으로 완료되었습니다.");
-        return "login";
+        return "/user/login";
     }
 
     @GetMapping("/login")
     public String login() {
-        return "User/login"; // "login" 대신 "User/login" 반환
+        return "/user/login"; // "login" 대신 "User/login" 반환
     }
 }

@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" th:href="@{/login/fonts/icomoon/style.css}">
+  <link rel="stylesheet" th:href="@{/login/css/owl.carousel.min.css}">
+  <link rel="stylesheet" th:href="@{/login/css/bootstrap.min.css}">
+  <link rel="stylesheet" th:href="@{/login/css/style.css}">
+
+  <title>Register</title>
+  <script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script> <!-- 다음 우편번호 API -->
+  <style>
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    .input-group {
+      display: flex;
+      align-items: center;
+    }
+
+    .form-control {
+      flex: 1;
+    }
+
+    .btn-find {
+      margin-left: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .input-group {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .btn-find {
+        margin-left: 0;
+        margin-top: 0.5rem;
+      }
+    }
+
+    .half .bg {
+      width: 50%;
+      height: 100vh;
+      background-size: cover;
+    }
+
+    .half .contents {
+      width: 50%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 500px;
+    }
+
+    @media (max-width: 768px) {
+      .half .bg,
+      .half .contents {
+        width: 100%;
+        height: auto;
+      }
+
+      .container {
+        max-width: 100%;
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="d-lg-flex half">
+  <div class="bg order-1 order-md-2" th:style="'background-image: url(' + @{/login/images/bg_1.jpg} + ');'"></div>
+  <div class="contents order-2 order-md-1">
+
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-12">
+          <h3>Register to <strong>Donation</strong></h3>
+          <p class="mb-4">Please enter your information to register.</p>
+          <form th:action="@{/register}" method="post">
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" class="form-control" placeholder="Username" id="username" name="username" required>
+            </div>
+            <div class="form-group first">
+              <label for="firstName">First Name</label>
+              <input type="text" class="form-control" placeholder="First Name" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" class="form-control" placeholder="Last Name" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" placeholder="Email" id="email" name="email" required>
+            </div>
+            <div class="form-group last mb-3">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" placeholder="Your Password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+              <label for="postalCode">Postal Code</label>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Postal Code" id="postalCode" name="postalCode" readonly required>
+                <input type="button" onclick="execDaumPostcode()" value="Find Postcode" class="btn btn-find">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="address">Address</label>
+              <input type="text" class="form-control" placeholder="Address" id="address" name="address" readonly required>
+            </div>
+            <div class="form-group">
+              <label for="addressLine2">Detailed Address</label>
+              <input type="text" class="form-control" placeholder="Detailed Address" id="addressLine2" name="addressLine2">
+            </div>
+
+            <input type="submit" value="Register" class="btn btn-block btn-primary">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function execDaumPostcode() {
+    new daum.Postcode({
+      oncomplete: function(data) {
+        var addr = data.address; // 주소 변수
+        var extraAddr = ''; // 참고항목 변수
+
+        if(data.addressType === 'R'){
+          if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+            extraAddr += data.bname;
+          }
+          if(data.buildingName !== '' && data.apartment === 'Y'){
+            extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+          }
+          if(extraAddr !== ''){
+            extraAddr = ' (' + extraAddr + ')';
+          }
+        }
+
+        document.getElementById('postalCode').value = data.zonecode;
+        document.getElementById('address').value = addr + extraAddr;
+        document.getElementById('addressLine2').focus();
+      }
+    }).open();
+  }
+</script>
+
+<script th:src="@{/login/js/jquery-3.3.1.min.js}"></script>
+<script th:src="@{/login/js/popper.min.js}"></script>
+<script th:src="@{/login/js/bootstrap.min.js}"></script>
+<script th:src="@{/login/js/main.js}"></script>
+</body>
+</html>
