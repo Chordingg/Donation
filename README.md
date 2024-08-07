@@ -26,7 +26,8 @@
 
 ## 👨‍💻 구현 방법 👩‍💻
 ```
----
+Boostrap 기본 frame을 thymeleaf를 사용하여 layout에 fragments(header,footer)를 넣어 html를 구현하고, 
+스프링 부트 쇼핑몰 프로젝트 with JPA 교재를 참고하여 여러 테이블을 순환하며 데이터 값들을 가져온다.
 ```
 
 <hr>
