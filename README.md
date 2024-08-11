@@ -42,7 +42,7 @@ Boostrap 기본 frame을 thymeleaf를 사용하여 layout에 fragments(header,fo
 Tool : SpringSource Tool Suite (STS) 3.9.18.RELEASE
 라이브러리 : JQuery, Lombok
 DBMS : OracleDB (11)
-API : Kakao Login/Map
+API : 
 ETC : Git
 ```
 
